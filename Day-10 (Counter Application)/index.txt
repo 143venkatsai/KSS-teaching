@@ -1,0 +1,7 @@
+parseInt(value)
+conditional statements 
+if{
+
+}else{
+
+}

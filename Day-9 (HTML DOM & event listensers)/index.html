@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="home">
+      <h1 id="heading">Light Off</h1>
+      <div class="buttons">
+        <button id="off" class="off" onClick="off()">Off</button>
+        <button id="on" class="on" onClick="on()">On</button>
+      </div>
+    </div>
+    <script>
+      let headingText = document.getElementById("heading");
+      let containerDiv = document.getElementById("home");
+      let buttonOff = document.getElementById("off");
+      let buttonOn = document.getElementById("on");
+      function on() {
+        containerDiv.style.backgroundColor = "white";
+        headingText.innerHTML = "Light On";
+        headingText.style.color = "black";
+        buttonOn.style.backgroundColor = "#707372";
+        buttonOff.style.backgroundColor = "red";
+      }
+
+      function off() {
+        containerDiv.style.backgroundColor = "black";
+        headingText.innerHTML = "Light Off";
+        headingText.style.color = "white";
+        buttonOff.style.backgroundColor = "#707372";
+        buttonOn.style.backgroundColor = "green";
+      }
+    </script>
+  </body>
+</html>
