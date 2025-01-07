@@ -1,0 +1,15 @@
+# git install
+# github add account (create account)
+
+1. git init (files are untracked) untracked (U)
+2. git add . (files are tracked) A
+3. git commit -m "first project"
+4. git branch -M main (main branch)
+5. git remote add origin "repo url"
+6. git push -u origin main
+
+
+
+Setting up the credentials 
+1. git config --global user.email "Your Email"
+2. git config --global user.name "Your username"
