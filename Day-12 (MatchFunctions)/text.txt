@@ -1,0 +1,6 @@
+Math Functions 
+
+1. Math.random()  it will generate a number between 0 - 1
+2. Math.floor()   55.8 = 55
+3. Math.ceil()    55.4 = 56
+4. Math.round()   55.4 = 55 or 55.6 = 56

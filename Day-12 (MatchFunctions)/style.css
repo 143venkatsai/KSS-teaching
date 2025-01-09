@@ -1,0 +1,40 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+input {
+  padding: 10px 20px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #ffff;
+  background-color: blue;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
