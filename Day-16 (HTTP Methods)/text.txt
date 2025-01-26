@@ -1,0 +1,7 @@
+HTTP Methods
+The HTTP methods are used to specify the action to be performed on the requested resource. The most common
+HTTP methods are:
+GET: Retrieves a resource from the server.
+POST: Sends data to the server to create a new resource.
+PUT: Updates an existing resource on the server.
+DELETE: Deletes a resource from the server.
