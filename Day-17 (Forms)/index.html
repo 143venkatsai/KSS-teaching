@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="formElement">
+        <h1>Form</h1>
+        <div class="form-element">
+          <label for="email">Email<sup>*</sup></label> <br />
+          <input
+            id="email"
+            type="text"
+            placeholder="Enter your email"
+            required
+          />
+          <p id="emailError"></p>
+        </div>
+        <div class="form-element">
+          <label for="password">Password<sup>*</sup></label> <br />
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+          <p id="passwordError"></p>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
