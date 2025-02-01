@@ -1,0 +1,34 @@
+URL = Uniform Resource Locator 
+
+1. Protocal
+2. Domain
+3. Path
+4. QueryParameters
+
+url = https://www.flipkart.com
+
+http & https
+
+https - Hypertext Transfer Protocal Secure
+http - Hypertext Transfer Protocal
+
+Domain - www.flipkart.com
+path- /watches
+path parameter - /:id
+query parameters - ?search=apple+watch+series+7
+
+URL - https://www.flipkart.com/watches/digital/:id?search=apple
+
+
+
+let options = {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        "Authorization": Bearer token
+    },
+    body: JSON.stringify(data)
+}
+
+
+localStorage.setItem("key", value)

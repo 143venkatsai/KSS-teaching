@@ -27,3 +27,10 @@ password.addEventListener("blur", function (e) {
 formElement.addEventListener("submit", function (e) {
   e.preventDefault();
 });
+
+// localStorage.setItem("name", "Venkat");
+// localStorage.removeItem("name");
+console.log(localStorage.getItem("name"));
+
+// sessionStorage.setItem("age", 23);
+
