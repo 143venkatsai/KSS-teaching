@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-1 React</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="mydiv">
+      <!-- code -->
+    </div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Welcom to React JS Day - 1 </h1>;
+      }
+
+      
+
+      const container = document.getElementById("mydiv");
+      //   const elemnt = React.createElement(type, props) syntax to create an element
+      // <h1 className="greeeting">Hello world</h1>
+      const elementProps = { className: "greeting", children: "Hello World" };
+      const element = <h1>{elementProps.children}</h1>;
+      //   const root = ReactDOM.createRoot(container);
+      //   root.render(<element />);
+      ReactDOM.render(<Hello />, container);
+    </script>
+  </body>
+</html>
