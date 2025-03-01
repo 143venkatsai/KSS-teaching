@@ -1,43 +1,41 @@
-import React from "react";
-import ProductItem from "./components/ProductItem";
+import React, { useState } from "react";
 
-const productsData = [
-  {
-    id: 1,
-    name: "Product 1",
-    price: 10.99,
-    description: "This is product 1",
-    image: "https://picsum.photos/200/300",
-  },
-  {
-    id: 2,
-    name: "Product 2",
-    price: 5.99,
-    description: "This is product 2",
-    image: "https://picsum.photos/200/301",
-  },
-  {
-    id: 3,
-    name: "Product 3",
-    price: 7.99,
-    description: "This is product 3",
-    image: "https://picsum.photos/200/302",
-  },
-];
+import "./App.css";
 
 const App = () => {
-  // for (let product of productsData) {
-  //   console.log(product);
-  // }
+  const [isTrue, setIsTrue] = useState(false);
+
+  const handleClick = () => {
+    setIsTrue(!isTrue);
+  };
+  console.log(isTrue);
+
+  // const renderAuth = () => {
+  //   if (isTrue) {
+  //     return <button onClick={handleClick}>Logout</button>;
+  //   } else {
+  //     return <button onClick={handleClick}>Login</button>;
+  //   }
+  // };
+
+  // renderAuth();
 
   return (
-    <div>
-      <h1>Products</h1>
-      <ul>
-        {productsData.map((product, index) => (
-          <ProductItem productDetails={product} key={product.id} />
-        ))}
-      </ul>
+    <div className="container">
+      <h1>My App</h1>
+      {/* {renderAuth()} */}
+
+      {/* Ternary Opeartor  */}
+      {/* {isTrue ? (
+        <button onClick={handleClick}>Logout</button>
+      ) : (
+        <button onClick={handleClick}>Login</button>
+      )} */}
+      {/* <button onClick={handleClick}>{isTrue ? "Logout" : "Login"}</button> */}
+
+      {/* Logical && Operator  */}
+      {!isTrue && <button onClick={handleClick}>Login</button>}
+      {isTrue && <button onClick={handleClick}>Logout</button>}
     </div>
   );
 };
