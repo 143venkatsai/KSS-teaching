@@ -24,4 +24,6 @@ img {
 .icon {
   font-size: 30px;
   color: red;
+  cursor: pointer;
+  outline: none;
 }

@@ -1,10 +1,12 @@
+// Day-6 & 7 Classes
+
 import React, { useState } from "react";
 
 import ProductItem from "./components/ProductItem";
 
 import "./App.css";
 
-const categories = [
+const initialCategories = [
   {
     idCategory: "1",
     strCategory: "Beef",
@@ -109,6 +111,8 @@ const categories = [
 
 const App = () => {
   const [searchItem, setSearchItem] = useState("");
+  const [categories, setCategories] = useState(initialCategories);
+  // console.log(categories);
 
   const handleChange = (e) => {
     setSearchItem(e.target.value);
@@ -124,7 +128,15 @@ const App = () => {
   // console.log(categories);
 
   const filteredItemsLength = filteredItems.length;
-  console.log(filteredItemsLength);
+  // console.log(filteredItemsLength);
+
+  const handleDelete = (idCategory, strCategory) => {
+    console.log(idCategory);
+    setCategories(
+      categories.filter((category) => category.idCategory !== idCategory)
+    );
+    alert(`${strCategory} deleted successfully!`);
+  };
 
   return (
     <div className="container">
@@ -138,7 +150,11 @@ const App = () => {
       {filteredItemsLength > 0 ? (
         <ul>
           {filteredItems.map((category) => (
-            <ProductItem productDetails={category} key={category.idCategory} />
+            <ProductItem
+              productDetails={category}
+              key={category.idCategory}
+              onDelete={handleDelete}
+            />
           ))}
         </ul>
       ) : (
